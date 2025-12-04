@@ -8,7 +8,10 @@ import java.net.URI
 
 @RestController
 @RequestMapping("/api/songs")
-@CrossOrigin(origins = ["http://localhost:5173"])
+@CrossOrigin(origins = [
+    "http://localhost:5173",
+    "https://yuyujin03.github.io",
+])
 class SongController(private val service: SongService) {
     // Create
     @PostMapping
