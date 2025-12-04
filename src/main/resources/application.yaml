@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: w25w11-mongodb-backend
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+server:
+  tomcat:
+    relaxed-path-elements: "%2F"
